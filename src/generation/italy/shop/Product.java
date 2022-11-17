@@ -23,7 +23,7 @@ public class Product {
 		randomCode = rnd.nextInt(10000,99999);
 
 		code = randomCode;
-		
+		iva = 20;
 	}
 	
 	public int getPrice() {
@@ -33,7 +33,7 @@ public class Product {
 	
 	public int totalPrice() {
 		
-		int ivaPrice = (price * 20) / 100;
+		int ivaPrice = (price * iva) / 100;
 		
 		int totalPrice = ivaPrice + price;
 		
